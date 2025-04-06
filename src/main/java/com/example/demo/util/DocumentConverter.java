@@ -1,11 +1,11 @@
 package com.example.demo.util;
 
-import com.example.demo.model.Autor;
-import com.example.demo.model.Editorial;
-import com.example.demo.model.Libro;
 import com.example.demo.model.mongo.AutorDocument;
 import com.example.demo.model.mongo.EditorialDocument;
 import com.example.demo.model.mongo.LibroDocument;
+import com.example.demo.model.postgres.Autor;
+import com.example.demo.model.postgres.Editorial;
+import com.example.demo.model.postgres.Libro;
 
 import java.util.stream.Collectors;
 import java.util.ArrayList;

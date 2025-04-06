@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.demo.model.postgres;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,11 +8,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "autores")
+@Table(name = "editoriales")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Autor {
+public class Editorial {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,17 +21,19 @@ public class Autor {
     @Column(nullable = false)
     private String nombre;
     
-    @Column(nullable = false)
-    private String apellidos;
+    private String direccion;
     
-    private String biografia;
+    private String ciudad;
     
-    private String nacionalidad;
+    private String pais;
     
-    @Column(name = "fecha_nacimiento")
-    private String fechaNacimiento;
+    private String telefono;
     
-    // Relación con Libro - Un autor puede tener muchos libros
-    @ManyToMany(mappedBy = "autores")
+    private String email;
+    
+    private String sitioWeb;
+    
+    // Relación con Libro - Una editorial puede tener muchos libros
+    @OneToMany(mappedBy = "editorial", cascade = CascadeType.ALL)
     private Set<Libro> libros = new HashSet<>();
 }

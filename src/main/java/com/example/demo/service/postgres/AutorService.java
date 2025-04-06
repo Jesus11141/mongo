@@ -1,7 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.service.postgres;
 
-import com.example.demo.model.Autor;
-import com.example.demo.repository.AutorRepository;
+import com.example.demo.model.postgres.Autor;
+import com.example.demo.repository.postgres.AutorRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

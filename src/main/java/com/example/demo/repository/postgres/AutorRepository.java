@@ -1,8 +1,9 @@
-package com.example.demo.repository;
+package com.example.demo.repository.postgres;
 
-import com.example.demo.model.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.example.demo.model.postgres.Autor;
 
 import java.util.List;
 

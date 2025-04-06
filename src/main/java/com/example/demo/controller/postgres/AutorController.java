@@ -1,7 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.controller.postgres;
 
-import com.example.demo.model.Autor;
-import com.example.demo.service.AutorService;
+import com.example.demo.model.postgres.Autor;
+import com.example.demo.service.postgres.AutorService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
